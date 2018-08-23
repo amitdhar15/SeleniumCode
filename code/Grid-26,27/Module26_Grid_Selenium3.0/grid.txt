@@ -1,0 +1,14 @@
+Hub->
+java -Dwebdriver.gecko.driver=F:\drivers\geckodriver.exe -Dwebdriver.chrome.driver=F:\drivers\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role hub -hubConfig hub.json
+
+Node 1->
+java -Dwebdriver.gecko.driver=F:\drivers\geckodriver.exe -Dwebdriver.chrome.driver=F:\drivers\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role node -nodeConfig node1.json
+
+Node 2->
+java -Dwebdriver.gecko.driver=F:\drivers\geckodriver.exe -Dwebdriver.chrome.driver=F:\drivers\chromedriver.exe -jar jars/selenium-server-standalone-3.0.1.jar -role node  -nodeConfig node2.json
+
+
+
+
+
+

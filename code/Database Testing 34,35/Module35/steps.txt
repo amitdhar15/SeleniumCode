@@ -1,0 +1,22 @@
+mysqladmin.exe -u root password NEWPASS
+Make sure username/password of mysql is root/root
+Install Tomcat - not in c:
+
+1) Open command prompt and go to bin of mysql
+2) command mysql -u root -p
+3) provide password and login to mysql
+4) command ->show databases
+5) command -> use test
+6) command -> SOURCE %Path of schema.sql%
+7) command -> use lead
+8) command -> show tables; - verify 3 tables are present
+9) Modify build.properties path to tomcat path in your machine
+	Take care of /
+10) Open command prompt and go to dir of lead app
+11) Command -> ant clean deploy
+12) Start tomcat
+13) Open URL http://localhost:8080/leadapp
+Username-> user@javachap.com
+Password-> javachap
+
+Do transactions and check Database !!!!

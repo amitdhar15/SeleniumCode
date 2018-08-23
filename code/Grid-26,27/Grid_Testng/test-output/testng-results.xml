@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="My Sample Suite" duration-ms="38590" started-at="2016-04-05T04:41:44Z" finished-at="2016-04-05T04:42:23Z">
+    <groups>
+    </groups>
+    <test name="Test B" duration-ms="12090" started-at="2016-04-05T04:41:44Z" finished-at="2016-04-05T04:41:56Z">
+      <class name="testcases.TestB">
+        <test-method status="PASS" signature="testB()[pri:0, instance:testcases.TestB@d041cf]" name="testB" duration-ms="11233" started-at="2016-04-05T10:11:44Z" finished-at="2016-04-05T10:11:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testB -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.TestB@d041cf]" name="quit" is-config="true" duration-ms="846" started-at="2016-04-05T10:11:55Z" finished-at="2016-04-05T10:11:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TestB -->
+    </test> <!-- Test B -->
+    <test name="Test C" duration-ms="14577" started-at="2016-04-05T04:41:44Z" finished-at="2016-04-05T04:41:59Z">
+      <class name="testcases.TestC">
+        <test-method status="PASS" signature="testC()[pri:0, instance:testcases.TestC@e580929]" name="testC" duration-ms="14421" started-at="2016-04-05T10:11:44Z" finished-at="2016-04-05T10:11:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testC -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.TestC@e580929]" name="quit" is-config="true" duration-ms="146" started-at="2016-04-05T10:11:58Z" finished-at="2016-04-05T10:11:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TestC -->
+    </test> <!-- Test C -->
+    <test name="Test A" duration-ms="38590" started-at="2016-04-05T04:41:44Z" finished-at="2016-04-05T04:42:23Z">
+      <class name="testcases.TestA">
+        <test-method status="PASS" signature="before()[pri:0, instance:testcases.TestA@721e0f4f]" name="before" is-config="true" duration-ms="7353" started-at="2016-04-05T10:11:44Z" finished-at="2016-04-05T10:11:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method status="PASS" signature="testA()[pri:0, instance:testcases.TestA@721e0f4f]" name="testA" duration-ms="15757" started-at="2016-04-05T10:11:51Z" finished-at="2016-04-05T10:12:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testA -->
+        <test-method status="PASS" signature="testAA()[pri:0, instance:testcases.TestA@721e0f4f]" name="testAA" duration-ms="5232" started-at="2016-04-05T10:12:07Z" finished-at="2016-04-05T10:12:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAA -->
+        <test-method status="PASS" signature="testAAA()[pri:0, instance:testcases.TestA@721e0f4f]" name="testAAA" duration-ms="5064" started-at="2016-04-05T10:12:12Z" finished-at="2016-04-05T10:12:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAAA -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:testcases.TestA@721e0f4f]" name="quit" is-config="true" duration-ms="5178" started-at="2016-04-05T10:12:17Z" finished-at="2016-04-05T10:12:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- testcases.TestA -->
+    </test> <!-- Test A -->
+  </suite> <!-- My Sample Suite -->
+</testng-results>

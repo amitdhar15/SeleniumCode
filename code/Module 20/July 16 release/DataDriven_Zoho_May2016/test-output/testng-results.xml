@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="8" failed="3" total="13" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SuiteName" duration-ms="230484" started-at="2016-05-15T08:25:53Z" finished-at="2016-05-15T08:29:43Z">
+    <groups>
+    </groups>
+    <test name="Login Test" duration-ms="44171" started-at="2016-05-15T08:25:53Z" finished-at="2016-05-15T08:26:37Z">
+      <class name="com.qtpselenium.zoho.project.testcases.LoginTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="init" is-config="true" duration-ms="4" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="init" is-config="true" duration-ms="8" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="doLoginTest" duration-ms="41930" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:56:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=its.thakur@gmail.com, ExpectedResult=Y, Password=xxxxx, Runmode=Y, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Login Test Failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Login Test Failed.
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qtpselenium.zoho.project.base.BaseTest.reportFailure(BaseTest.java:205)
+	at com.qtpselenium.zoho.project.testcases.LoginTest.doLoginTest(LoginTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method status="SKIP" signature="doLoginTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="doLoginTest" duration-ms="7" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:55:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{Username=its.thakur@gmail.com, ExpectedResult=Y, Password=pass@1234, Runmode=N, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LoginTest.doLoginTest(LoginTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- doLoginTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="quit" is-config="true" duration-ms="397" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LoginTest@481a15ff]" name="quit" is-config="true" duration-ms="1749" started-at="2016-05-15T13:56:35Z" finished-at="2016-05-15T13:56:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LoginTest -->
+    </test> <!-- Login Test -->
+    <test name="Potential Test" duration-ms="85231" started-at="2016-05-15T08:25:53Z" finished-at="2016-05-15T08:27:18Z">
+      <class name="com.qtpselenium.zoho.project.testcases.PotentialTest">
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.PotentialTest@5a4041cc]" name="init" is-config="true" duration-ms="23" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="createPotentialTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.PotentialTest@5a4041cc]" name="createPotentialTest" duration-ms="84108" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:57:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{PotentialName=Henry, Runmode=Y, AccountName=Ford Motors, ClosingDate=5/8/2016, Stage=Qualification, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Unable to locate element: {"method":"xpath","selector":"//*[@id='zl-myapps']/div[1]/div[2]/div/a/div"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'a-PC', ip: '192.168.1.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
+Driver info: driver.version: unknown
+Command duration or timeout: 21.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'a-PC', ip: '192.168.1.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=032080e0-6f38-4138-8fe7-dbf7d8880fd9, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 032080e0-6f38-4138-8fe7-dbf7d8880fd9
+*** Element info: {Using=xpath, value=//*[@id='zl-myapps']/div[1]/div[2]/div/a/div}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Unable to locate element: {"method":"xpath","selector":"//*[@id='zl-myapps']/div[1]/div[2]/div/a/div"}
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593c', time: '2016-02-11 19:06:42'
+System info: host: 'a-PC', ip: '192.168.1.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
+Driver info: driver.version: unknown
+Command duration or timeout: 21.38 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.52.0', revision: '4c2593cfc3689a7fcd7be52549167e5ccc93ad28', time: '2016-02-11 11:22:43'
+System info: host: 'a-PC', ip: '192.168.1.111', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '1.8.0_05'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=43.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webdriver.remote.sessionid=032080e0-6f38-4138-8fe7-dbf7d8880fd9, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 032080e0-6f38-4138-8fe7-dbf7d8880fd9
+*** Element info: {Using=xpath, value=//*[@id='zl-myapps']/div[1]/div[2]/div/a/div}
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qtpselenium.zoho.project.base.BaseTest.reportFailure(BaseTest.java:205)
+	at com.qtpselenium.zoho.project.base.BaseTest.getElement(BaseTest.java:144)
+	at com.qtpselenium.zoho.project.base.BaseTest.click(BaseTest.java:116)
+	at com.qtpselenium.zoho.project.testcases.PotentialTest.createPotentialTest(PotentialTest.java:35)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:37)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:368)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createPotentialTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.PotentialTest@5a4041cc]" name="quit" is-config="true" duration-ms="604" started-at="2016-05-15T13:57:18Z" finished-at="2016-05-15T13:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="SKIP" signature="deletePotentialAccountTest()[pri:0, instance:com.qtpselenium.zoho.project.testcases.PotentialTest@5a4041cc]" name="deletePotentialAccountTest" duration-ms="1" started-at="2016-05-15T13:57:18Z" depends-on-methods="com.qtpselenium.zoho.project.testcases.PotentialTest.createPotentialTest" finished-at="2016-05-15T13:57:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletePotentialAccountTest -->
+      </class> <!-- com.qtpselenium.zoho.project.testcases.PotentialTest -->
+    </test> <!-- Potential Test -->
+    <test name="Lead Test" duration-ms="230476" started-at="2016-05-15T08:25:53Z" finished-at="2016-05-15T08:29:43Z">
+      <class name="com.qtpselenium.zoho.project.testcases.LeadTest">
+        <test-method status="PASS" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="createLeadTest" duration-ms="122233" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:57:56Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Wilson, Runmode=Y, LeadCompany=Samsung, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="createLeadTest" duration-ms="472" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:55:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Watson, Runmode=N, LeadCompany=HP, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.createLeadTest(LeadTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="createLeadTest" duration-ms="388" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:55:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Sharma, Runmode=N, LeadCompany=Lenovo, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.createLeadTest(LeadTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="createLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="createLeadTest" duration-ms="394" started-at="2016-05-15T13:55:54Z" data-provider="getData" finished-at="2016-05-15T13:55:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Sam, Runmode=N, LeadCompany=Sony, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.createLeadTest(LeadTest.java:33)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createLeadTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="144" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="75" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="37" started-at="2016-05-15T13:55:54Z" finished-at="2016-05-15T13:55:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="901" started-at="2016-05-15T13:57:56Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="convertLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="convertLeadTest" duration-ms="51215" started-at="2016-05-15T13:57:57Z" data-provider="getData" finished-at="2016-05-15T13:58:48Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Wilson, Runmode=Y, LeadCompany=Samsung, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="1" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="convertLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="convertLeadTest" duration-ms="13" started-at="2016-05-15T13:57:57Z" data-provider="getData" finished-at="2016-05-15T13:57:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Sam, Runmode=N, LeadCompany=Sony, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.convertLeadTest(LeadTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="1" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="SKIP" signature="convertLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="convertLeadTest" duration-ms="2" started-at="2016-05-15T13:57:57Z" data-provider="getData" finished-at="2016-05-15T13:57:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Watson, Runmode=N, LeadCompany=HP, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.convertLeadTest(LeadTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadTest -->
+        <test-method status="SKIP" signature="convertLeadTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="convertLeadTest" duration-ms="48" started-at="2016-05-15T13:57:57Z" data-provider="getData" finished-at="2016-05-15T13:57:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Sharma, Runmode=N, LeadCompany=Lenovo, Browser=Chrome}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.testng.SkipException">
+            <message>
+              <![CDATA[Skipping the test as runmode is N]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.SkipException: Skipping the test as runmode is N
+	at com.qtpselenium.zoho.project.testcases.LeadTest.convertLeadTest(LeadTest.java:66)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.SkipException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- convertLeadTest -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="37" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="74" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="74" started-at="2016-05-15T13:57:57Z" finished-at="2016-05-15T13:57:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="479" started-at="2016-05-15T13:58:48Z" finished-at="2016-05-15T13:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+        <test-method status="FAIL" signature="deleteLeadAccountTest(java.util.Hashtable)[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="deleteLeadAccountTest" duration-ms="54757" started-at="2016-05-15T13:58:48Z" data-provider="getDataDeleteLead" finished-at="2016-05-15T13:59:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{LeadLastName=Chambers, Runmode=Y, LeadCompany=CISCO, Browser=Mozilla}]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Lead not found Chambers]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Lead not found Chambers
+	at org.testng.Assert.fail(Assert.java:94)
+	at com.qtpselenium.zoho.project.base.BaseTest.reportFailure(BaseTest.java:205)
+	at com.qtpselenium.zoho.project.base.BaseTest.clickOnLead(BaseTest.java:304)
+	at com.qtpselenium.zoho.project.testcases.LeadTest.deleteLeadAccountTest(LeadTest.java:97)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:73)
+	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:14)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLeadAccountTest -->
+        <test-method status="PASS" signature="init()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="init" is-config="true" duration-ms="0" started-at="2016-05-15T13:58:48Z" finished-at="2016-05-15T13:58:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="PASS" signature="quit()[pri:0, instance:com.qtpselenium.zoho.project.testcases.LeadTest@543788f3]" name="quit" is-config="true" duration-ms="299" started-at="2016-05-15T13:59:43Z" finished-at="2016-05-15T13:59:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.qtpselenium.zoho.project.testcases.LeadTest -->
+    </test> <!-- Lead Test -->
+  </suite> <!-- SuiteName -->
+</testng-results>
